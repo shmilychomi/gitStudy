@@ -17,3 +17,9 @@ git commit -m "wrote a readme file
 * 添加文件到Git仓库,分两步:
     第一步,使用git add(可反复多次使用,添加多个文件)
     第二步,使用git commit,完成
+	
+	
+* 查看之前的修改
+```
+git diff readme.txt
+``` 	
