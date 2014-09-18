@@ -45,11 +45,11 @@ git diff readme.txt
 `git rest --hard 3628164` 3628164为版本号
 
 Git的版本回退速度非常快，因为Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD从指向“append GPL”：
-![Alt text](./1411054942604.png)  
+![Alt text](./pic/0.png)  
 
 改为指向“add distributed”：  
 
-![Alt text](./1411055060533.png)
+![Alt text](./pic/1.png)
 
 显示每一次命令
 `git reflog`  
