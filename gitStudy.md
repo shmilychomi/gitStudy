@@ -24,4 +24,3 @@
 git diff readme.txt
 `
 
-AAA
