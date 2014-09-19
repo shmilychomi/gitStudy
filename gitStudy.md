@@ -80,9 +80,9 @@ GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖĞ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ğindex£©µÄÔİ´æÇø£¬»¹Ó
 
 ##### Äã¿ÉÒÔ¼òµ¥Àí½âÎª£¬ĞèÒªÌá½»µÄÎÄ¼şĞŞ¸ÄÍ¨Í¨·Åµ½Ôİ´æÇø£¬È»ºó£¬Ò»´ÎĞÔÌá½»Ôİ´æÇøµÄËùÓĞĞŞ¸Ä¡£
 
-`Git is a distributed version control system. `
-`Git is free software distributed under the GPL.`
-`Git has a mutable index called stage.`
+`Git is a distributed version control system. `  
+`Git is free software distributed under the GPL.`  
+`Git has a mutable index called stage.`  
 
 ##### È»ºó£¬ÔÚ¹¤×÷ÇøĞÂÔöÒ»¸öLICENSEÎÄ±¾ÎÄ¼ş£¨ÄÚÈİËæ±ãĞ´£©¡£
 ##### ÏÈÓÃgit status²é¿´Ò»ÏÂ×´Ì¬£º
