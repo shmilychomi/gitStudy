@@ -11,7 +11,7 @@
 * Ìá½»ÎÄ¼şµ½²Ö¿â  
 	`
 	git commit -m "wrote a readme file
-	`
+	`  
 #### ×Ü½á
 * ³õÊ¼»¯Ò»¸öGit²Ö¿â,Ê¹ÓÃgit initÃüÁî
 * Ìí¼ÓÎÄ¼şµ½Git²Ö¿â,·ÖÁ½²½:
@@ -130,3 +130,45 @@ GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖĞ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ğindex£©µÄÔİ´æÇø£¬»¹Ó
 
 ### ×Ü½á
 ##### Àí½âÁËGitÊÇÈçºÎ¸ú×ÙĞŞ¸ÄµÄ£¬Ã¿´ÎĞŞ¸Ä£¬Èç¹û²»addµ½Ôİ´æÇø£¬ÄÇ¾Í²»»á¼ÓÈëµ½commitÖĞ¡£
+
+***
+### ³·ÏúĞŞ¸Ä
+`git checkout -- readme.txt`
+
+ÃüÁî`git checkout -- readme.txt`µÄÒâË¼ÊÇ,°Ñreadme.txtÎÄ¼şÔÚ¹¤×÷ÇøµÄĞŞ¸ÄÈ«²¿³·Ïú,ÕâÀïÓĞÁ½ÖÖÇé¿ö:Ò»ÖÖÊÇreadme.txtĞŞ¸Äºó»¹Ã»ÓĞ±»·Åµ½Ôİ´æÇø,ÏÖÔÚ³·ÏúĞŞ¸Ä¾Í»Øµ½ºÍ°æ±¾¿âÒ»Ä£Ò»ÑùµÄ×´Ì¬;Ò»ÖÖÊÇreadme.txtÒÑ¾­Ìí¼Óµ½Ôİ´æÇøºó,ÓÖ×÷ÁËĞŞ¸Ä,ÏÖÔÚ³·ÏúĞŞ¸Ä¾Í»Øµ½Ìí¼ÓÔİ´æÇøºóµÄ×´Ì¬.×ÜÖ®,¾ÍÊÇÈÃÕâ¸öÎÄ¼ş»Øµ½×î½üÒ»`git commit`»òÕß`git add`Ê±µÄ×´Ì¬.
+
+
+#####`git checkout -- file`ÖĞ`--`ºÜÖØÒª,Ã»ÓĞ`--`¾Í±ä³ÉÁË´´½¨Ò»¸öĞÂ·ÖÖ§µÄÃüÁî.
+
+
+ÒÔÏÂÎÄ¼ş
+
+> $ cat readme.txt
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
+Git has a mutable index called stage.
+Git tracks changes of files.
+My stupid boss still prefers SVN.
+
+> $ git add readme.txt  
+
+Ê¹ÓÃ`git status`²é¿´,ĞŞ¸ÄÖ»ÊÇÌí¼Óµ½ÁËÔİ´æÇø,»¹Ã»ÓĞÌá½»:
+
+> $ git status
+ On branch master
+ Changes to be committed:
+   (use "git reset HEAD <file>..." to unstage)
+       modified:   readme.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+
+#####¶ªÆúĞŞ¸ÄµÄ¹¤×÷Çø
+> $ git checkout -- readme.txt
+
+> $ git status
+ On branch master
+nothing to commit (working directory clean)
+
+### ×Ü½á
+##### ³¡¾°1:µ±¸ÄÂÒÀ´Ä³¸ö¹¤×÷ÇøÎÄ¼şµÄÄÚÈİ,Ïë¶ªÆú¹¤×÷ÇøµÄĞŞ¸ÄÊ±,ÓÃÃüÁî`git checkout -- file`
+##### ³¡¾°2: µ±²»µ«¸ÄÂÒÁË¹¤×÷ÇøÄ³¸öÎÄ¼şµÄÄÚÈİ£¬»¹Ìí¼Óµ½ÁËÔİ´æÇøÊ±£¬Ïë¶ªÆúĞŞ¸Ä£¬·ÖÁ½²½£¬µÚÒ»²½ÓÃÃüÁîgit reset HEAD file£¬¾Í»Øµ½ÁË³¡¾°1£¬µÚ¶ş²½°´³¡¾°1²Ù×÷¡£
+##### ³¡¾°3:ÒÑ¾­Ìá½»ÁË²»ºÏÊÊµÄĞŞ¸Äµ½°æ±¾¿âÊ±£¬ÏëÒª³·Ïú±¾´ÎÌá½»£¬²Î¿¼°æ±¾»ØÍËÒ»½Ú£¬²»¹ıÇ°ÌáÊÇÃ»ÓĞÍÆËÍµ½Ô¶³Ì¿â.
