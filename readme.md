@@ -143,23 +143,23 @@ GitµÄ°æ±¾¿âÀï´æÁËºÜ¶à¶«Î÷£¬ÆäÖÐ×îÖØÒªµÄ¾ÍÊÇ³ÆÎªstage£¨»òÕß½Ðindex£©µÄÔÝ´æÇø£¬»¹Ó
 
 ÒÔÏÂÎÄ¼þ
 
-> $ cat readme.txt
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
-Git tracks changes of files.
-My stupid boss still prefers SVN.
+> $ cat readme.txt  
+Git is a distributed version control system.  
+Git is free software distributed under the GPL.  
+Git has a mutable index called stage.  
+Git tracks changes of files.  
+My stupid boss still prefers SVN.  
 
-> $ git add readme.txt  
+> $ git add readme.txt    
 
-Ê¹ÓÃ`git status`²é¿´,ÐÞ¸ÄÖ»ÊÇÌí¼Óµ½ÁËÔÝ´æÇø,»¹Ã»ÓÐÌá½»:
+Ê¹ÓÃ`git status`²é¿´,ÐÞ¸ÄÖ»ÊÇÌí¼Óµ½ÁËÔÝ´æÇø,»¹Ã»ÓÐÌá½»:  
 
-> $ git status
- On branch master
- Changes to be committed:
-   (use "git reset HEAD <file>..." to unstage)
-       modified:   readme.txt
-no changes added to commit (use "git add" and/or "git commit -a")
+> $ git status  
+ On branch master  
+ Changes to be committed:  
+   (use "git reset HEAD <file>..." to unstage)  
+       modified:   readme.txt  
+no changes added to commit (use "git add" and/or "git commit -a")  
 
 #####¶ªÆúÐÞ¸ÄµÄ¹¤×÷Çø
 > $ git checkout -- readme.txt
