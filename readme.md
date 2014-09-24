@@ -172,3 +172,49 @@ nothing to commit (working directory clean)
 ##### 场景1:当改乱来某个工作区文件的内容,想丢弃工作区的修改时,用命令`git checkout -- file`
 ##### 场景2: 当不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
 ##### 场景3:已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库.
+
+***
+### 删除文件
+Git中,删除也是一个修改操作.添加一个新文件test.txt到Git并提交.
+
+> $ git add test.txt  
+
+> $ git commit -m "add test.txt"
+
+> [master 94cdc44] add test.txt
+
+> 1 file changed, 1 insertion(+)
+
+> create mode 100644 test.txt
+
+用rm命令删除.
+`rm test.txt`
+
+Git知道删除了文件.因此工作区和版本库就不一致礼.`git status`命令会显示哪些文件被删除.
+
+> $ git status  
+> *#* On branch master  
+> *#* Changes not staged for commit:  
+> *#*   (use "git add/rm <file>..." to update what will be   
+> committed)  
+> *#*   (use "git checkout -- <file>..." to discard changes > in working directory)  
+> *#*  
+> *#*       deleted:    test.txt  
+> *#*  
+> no changes added to commit (use "git add" and/or "git > commit -a")   
+
+现在用两个选择.一个1确实从版本库中删除该文件,使用`git rm`删掉,并且`commit`
+
+> *$* git rm test.txt  
+> rm 'test.txt'  
+> *$* git commit -m "remove test.txt"  
+> [master d17efd8] remove test.txt  
+> 1 file changed, 1 deletion(-)  
+> delete mode 100644 test.txt  
+
+另一种情况是删错了.因为版本库里还有.可以把误删除的文件恢复到最新版本.  
+
+`git checkout -- test.txt`
+
+### 总结
+命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失`最近一次提交后你修改的内容。`
