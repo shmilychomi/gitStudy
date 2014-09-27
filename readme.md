@@ -244,7 +244,7 @@ Git是分布式版本控制系统，同一个Git仓库，可以分布到不同�
 
 1. 登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库：
 ![Alt text](./pic/7.jpg)   
-在Repository name填入learngit，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：
+在Repository name填入learngit，其他保持默认设置，点击“Create repository”按钮，就成功地创建了一个新的Git仓库：  
 ![Alt text](./pic/8.jpg)    
 目前，在GitHub上的这个learngit仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
 
