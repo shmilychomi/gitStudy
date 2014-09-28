@@ -44,11 +44,10 @@ git diff readme.txt
 指定退回到某个版本  
 `git rest --hard 3628164` 3628164为版本号
 
-Git的版本回退速度非常快，因为Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD从指向“append GPL”：
+Git的版本回退速度非常快，因为Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD从指向“append GPL”：  
 ![Alt text](./pic/0.jpg)  
 
-改为指向“add distributed”：  
-
+改为指向“add distributed”：      
 ![Alt text](./pic/1.jpg)
 
 显示每一次命令
