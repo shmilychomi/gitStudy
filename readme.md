@@ -277,4 +277,28 @@ Branch master set up to track remote branch master from origin.
 
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
-分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，
+分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步.
+
+从远程仓库克隆
+***
+
+登录GitHub, 创建一个新仓库.名字叫gitskills:
+![Alt text](./pic/10.jpg)  
+勾选Initialize this repository with a README，这样GitHub会自动为我们创建一个README.md文件。创建完毕后，可以看到README.md文件：  
+![Alt text](./pic/11.jpg)  
+现在，远程库已经准备好了，下一步是用命令git clone克隆一个本地库：
+> $ git clone git@github.com:michaelliao/gitskills.git  
+Cloning into 'gitskills'...  
+remote: Counting objects: 3, done.  
+remote: Total 3 (delta 0), reused 0 (delta 0)  
+Receiving objects: 100% (3/3), done.  
+
+> $ cd *gitskills  
+
+> $ ls  
+> README.md  
+
+### 总结
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+
+Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
